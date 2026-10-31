@@ -86,24 +86,24 @@ export default function LanternRSVP() {
           {/* Spacer */}
           <div className="mt-10 mb-2 w-full" />
 
-          {/* Buttons */}
-          <div className="w-full max-w-sm grid grid-cols-2 gap-4">
+          {/* Buttons — stacked, full width, generous size */}
+          <div className="w-full max-w-xs flex flex-col gap-4">
             <a
               href={`tel:+91${primaryPhone}`}
-              className="flex items-center justify-center gap-2.5 bg-[#FFF4E3] text-[#6A1C28] py-4 rounded-xl font-sans text-xs uppercase tracking-widest font-bold shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.97]"
+              className="flex items-center justify-center gap-3 bg-[#FFF4E3] text-[#6A1C28] py-5 rounded-2xl font-sans text-sm uppercase tracking-[0.2em] font-bold shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.97]"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              Call
+              Call Now
             </a>
             <a
               href={`https://wa.me/91${primaryPhone}?text=${waMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2.5 bg-[#25D366] text-white py-4 rounded-xl font-sans text-xs uppercase tracking-widest font-bold shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.97]"
+              className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-5 rounded-2xl font-sans text-sm uppercase tracking-[0.2em] font-bold shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.97]"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.529 1.93.813 2.791.813 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.418-.456-4.887-1.258l-5.613 1.472 1.498-5.467c-.886-1.521-1.398-3.298-1.398-5.187 0-5.518 4.482-10 10-10s10 4.482 10 10z" />
               </svg>
               WhatsApp
