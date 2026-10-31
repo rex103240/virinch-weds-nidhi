@@ -117,16 +117,19 @@ export default function LanternRSVP() {
         </motion.div>
       </section>
 
-      {/* ── Promo Footer — Clean & Separate ── */}
-      <footer className="w-full bg-[#2A0A10] py-10 px-4 flex flex-col items-center text-center">
-        <a
-          href={`https://wa.me/${sellerPhone}?text=${sellerMessage}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-sans text-xs text-[#C9A96E]/50 hover:text-[#C9A96E] tracking-widest transition-colors duration-300"
-        >
-          Want a card like this? <span className="underline underline-offset-4">Get yours →</span>
-        </a>
+      {/* ── Promo Footer ── */}
+      <footer className="w-full bg-[#FFF4E3] py-8 px-4 flex flex-col items-center text-center border-t border-[#E8DFC8]">
+        <p className="font-sans text-xs sm:text-sm text-[#6B5D4F] tracking-wide">
+          Want a digital invitation like this?{" "}
+          <a
+            href={`https://wa.me/${sellerPhone}?text=${sellerMessage}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#6A1C28] underline underline-offset-4 decoration-[#C9A96E] hover:text-[#4A1521] transition-colors"
+          >
+            Click here to get yours
+          </a>
+        </p>
       </footer>
     </>
   );
