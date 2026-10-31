@@ -18,7 +18,7 @@ const events: EventItem[] = [
     hindi: "विनायक स्थापना",
     date: "Friday, 11 Dec 2026",
     time: "09:15 AM",
-    venue: "Sweet Dream Land, New Nagour Rd, opp. National Law University, Jodhpur",
+    venue: "157 Laxmi Nagar, Paota, Jodhpur",
   },
   {
     title: "Ghritpan Ceremony",
