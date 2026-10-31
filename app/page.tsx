@@ -8,7 +8,6 @@ import ParallaxArches from "@/components/creative/ParallaxArches";
 import BloomingLotus from "@/components/creative/BloomingLotus";
 import ThreadTimeline from "@/components/creative/ThreadTimeline";
 import LanternRSVP from "@/components/creative/LanternRSVP";
-import CreatorPromo from "@/components/creative/CreatorPromo";
 import MusicToggle from "@/components/ui/MusicToggle";
 
 // Dynamic import for smooth scroll (client-side only)
@@ -53,11 +52,8 @@ export default function Home() {
             {/* Screen 4: Flowing Golden Thread Timeline */}
             <ThreadTimeline />
 
-            {/* Screen 5: RSVP with Call & WhatsApp */}
+            {/* Screen 5: RSVP with Call & WhatsApp + Promo */}
             <LanternRSVP />
-
-            {/* Creator Promo Footer */}
-            <CreatorPromo />
           </main>
         </SmoothScroll>
       )}
