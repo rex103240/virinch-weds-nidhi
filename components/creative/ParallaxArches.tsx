@@ -31,7 +31,7 @@ export default function ParallaxArches() {
   return (
     <section 
       ref={containerRef}
-      className="relative h-[150vh] bg-[#FFF4E3] overflow-hidden"
+      className="relative h-[125vh] bg-[#FFF4E3] overflow-hidden"
     >
       {/* Sticky container holds everything in viewport while scrolling */}
       <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
