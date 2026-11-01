@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Virinch & Nidhi — Wedding Invitation",
     description:
-      "Join us as we celebrate the auspicious union of Virinch & Nidhi. 12 Dec 2026 — Jodhpur, Rajasthan.",
+      "Join us as we celebrate the wedding celebration of Virinch & Nidhi. 12 Dec 2026 — Jodhpur, Rajasthan.",
     type: "website",
   },
 };

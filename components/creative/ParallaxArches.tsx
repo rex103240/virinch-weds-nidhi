@@ -50,7 +50,7 @@ export default function ParallaxArches() {
             transition={{ duration: 1, delay: 0.5 }}
             className="uppercase tracking-[0.4em] md:tracking-[0.6em] text-[0.65rem] md:text-[0.75rem] font-medium text-[#6B5D4F] mb-10 font-sans"
           >
-            The Auspicious Union Of
+            The Wedding Celebration Of
           </motion.p>
 
           <motion.div 

@@ -135,9 +135,14 @@ export default function BloomingLotus() {
                 Jodhpur, Rajasthan
               </p>
 
-              <p className="font-serif italic text-[#D9CDB8] text-center max-w-sm mt-6 opacity-80 leading-relaxed px-4">
-                "Two souls, one destiny — blessed with timeless joy under the golden skies of the Sun City."
-              </p>
+              <div className="text-center max-w-md mt-6 px-4">
+                <p className="font-serif text-[#D4B87A] text-sm sm:text-base tracking-wide mb-1 font-medium">
+                  With the blessings of Shri Temda Rai &amp; Maa Karni
+                </p>
+                <p className="font-serif italic text-[#D9CDB8] text-sm sm:text-base leading-relaxed opacity-90">
+                  "A new journey begins under the golden skies of Sun City"
+                </p>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
