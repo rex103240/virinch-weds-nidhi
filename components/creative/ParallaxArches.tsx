@@ -48,7 +48,7 @@ export default function ParallaxArches() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="uppercase tracking-[0.4em] md:tracking-[0.6em] text-[0.65rem] md:text-[0.75rem] font-medium text-[#6B5D4F] mb-10 font-sans"
+            className="uppercase tracking-[0.4em] md:tracking-[0.6em] text-[0.65rem] md:text-[0.75rem] font-medium text-[#6B5D4F] mb-6 md:mb-8 font-sans"
           >
             The Wedding Celebration Of
           </motion.p>
@@ -57,15 +57,15 @@ export default function ParallaxArches() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="my-12 flex flex-col items-center gap-4"
+            className="my-6 md:my-8 flex flex-col items-center gap-2 md:gap-4"
           >
-            <h1 className="font-cinzel text-[clamp(3.5rem,12vw,7rem)] text-[#6B1D2A] leading-tight drop-shadow-sm font-medium">
+            <h1 className="font-cinzel text-[clamp(3rem,10vw,6.5rem)] text-[#6B1D2A] leading-tight drop-shadow-sm font-medium">
               Virinch
             </h1>
-            <span className="font-script italic text-4xl md:text-6xl text-[#C9A96E] block opacity-80 -my-2">
+            <span className="font-script italic text-3xl md:text-5xl text-[#C9A96E] block opacity-80 -my-2">
               &
             </span>
-            <h1 className="font-cinzel text-[clamp(3.5rem,12vw,7rem)] text-[#6B1D2A] leading-tight drop-shadow-sm font-medium">
+            <h1 className="font-cinzel text-[clamp(3rem,10vw,6.5rem)] text-[#6B1D2A] leading-tight drop-shadow-sm font-medium">
               Nidhi
             </h1>
           </motion.div>
@@ -74,12 +74,28 @@ export default function ParallaxArches() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
-            className="mt-8"
+            className="mt-4 md:mt-6"
           >
             <OrnamentDivider motif="❋" />
-            <p className="font-serif italic text-[clamp(1.1rem,3vw,1.5rem)] text-[#8B7355] mt-6 tracking-wide px-4">
+            <p className="font-serif italic text-[clamp(1rem,2.5vw,1.35rem)] text-[#8B7355] mt-4 md:mt-5 tracking-wide px-4">
               Two souls, one journey — forever begins here.
             </p>
+          </motion.div>
+
+          {/* Sacred Deity Emblem */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
+            className="mt-5 md:mt-7 flex justify-center"
+          >
+            <div className="relative rounded-xl overflow-hidden shadow-lg border border-[#C9A96E]/40 max-w-[125px] sm:max-w-[150px] md:max-w-[170px]">
+              <img
+                src="/karni-mata.jpg"
+                alt="Shri Temda Rai & Maa Karni"
+                className="w-full h-auto object-contain block"
+              />
+            </div>
           </motion.div>
         </motion.div>
 
