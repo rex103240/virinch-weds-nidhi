@@ -81,22 +81,6 @@ export default function ParallaxArches() {
               Two souls, one journey — forever begins here.
             </p>
           </motion.div>
-
-          {/* Sacred Deity Emblem — brought down into the center of the lower ample space */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
-            className="mt-20 sm:mt-28 md:mt-32 flex justify-center"
-          >
-            <div className="relative rounded-xl overflow-hidden shadow-md border border-[#C9A96E]/40 w-[110px] sm:w-[125px] md:w-[135px] bg-[#FFF4E3]">
-              <img
-                src="/karni-mata.jpg"
-                alt="Shri Temda Rai & Maa Karni"
-                className="w-full h-auto object-contain block"
-              />
-            </div>
-          </motion.div>
         </motion.div>
 
         {/* Arch Layer 2 (Middle) */}
@@ -133,34 +117,53 @@ export default function ParallaxArches() {
           </svg>
         </motion.div>
 
-        {/* Navigation Preview Tutorial (Subtle cue to scroll down, matches RoyalDoors style) */}
-        <motion.div
-          style={{ opacity: tutorialOpacity }}
-          className="absolute bottom-7 sm:bottom-10 left-1/2 -translate-x-1/2 z-30 pointer-events-auto cursor-pointer select-none"
-          onClick={() => {
-            window.scrollBy({ top: window.innerHeight * 0.85, behavior: "smooth" });
-          }}
-        >
+        {/* Sacred Deity Emblem directly touching the Scroll Down float */}
+        <div className="absolute bottom-5 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center pointer-events-auto">
+          {/* Sacred Deity Emblem */}
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2.2, duration: 1, ease: "easeOut" }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
+            className="mb-2 flex justify-center"
           >
-            <motion.p
-              animate={{ opacity: [0.4, 1, 0.4], y: [0, 4, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="font-sans uppercase tracking-[0.3em] text-[0.7rem] text-[#6B5D4F] font-medium drop-shadow-sm flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-[#FFF4E3]/40 backdrop-blur-xs border border-[#C9A96E]/20"
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <path d="M19 9l-7 7-7-7" />
-              </svg>
-              Swipe Down
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <path d="M19 9l-7 7-7-7" />
-              </svg>
-            </motion.p>
+            <div className="relative rounded-xl overflow-hidden shadow-md border border-[#C9A96E]/40 w-[105px] sm:w-[120px] md:w-[130px] bg-[#FFF4E3]">
+              <img
+                src="/karni-mata.jpg"
+                alt="Shri Temda Rai & Maa Karni"
+                className="w-full h-auto object-contain block"
+              />
+            </div>
           </motion.div>
-        </motion.div>
+
+          {/* Navigation Preview Tutorial (Scroll Down Float) */}
+          <motion.div
+            style={{ opacity: tutorialOpacity }}
+            className="cursor-pointer select-none"
+            onClick={() => {
+              window.scrollBy({ top: window.innerHeight * 0.85, behavior: "smooth" });
+            }}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2.2, duration: 1, ease: "easeOut" }}
+            >
+              <motion.p
+                animate={{ opacity: [0.4, 1, 0.4], y: [0, 4, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                className="font-sans uppercase tracking-[0.3em] text-[0.7rem] text-[#6B5D4F] font-medium drop-shadow-sm flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-[#FFF4E3]/40 backdrop-blur-xs border border-[#C9A96E]/20"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+                Swipe Down
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </motion.p>
+            </motion.div>
+          </motion.div>
+        </div>
 
       </div>
     </section>
