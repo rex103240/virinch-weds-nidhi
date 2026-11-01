@@ -126,7 +126,7 @@ export default function ParallaxArches() {
             transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
             className="mb-2 flex justify-center"
           >
-            <div className="relative rounded-xl overflow-hidden shadow-md border border-[#C9A96E]/40 w-[105px] sm:w-[120px] md:w-[130px] bg-[#FFF4E3]">
+            <div className="relative rounded-xl overflow-hidden shadow-md border border-[#C9A96E]/40 w-[126px] sm:w-[144px] md:w-[156px] bg-[#FFF4E3]">
               <img
                 src="/karni-mata.jpg"
                 alt="Shri Temda Rai & Maa Karni"
