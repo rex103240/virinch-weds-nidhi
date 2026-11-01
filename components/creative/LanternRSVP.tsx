@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 export default function LanternRSVP() {
   const primaryPhone = "8003530144";
   const secondaryPhone = "7300337983";
-  const sellerPhone = "917976944626";
+  const sellerPhone = "919829354128";
   const waMessage = encodeURIComponent(
     "Namaste Arvind ji, Heartiest congratulations to Virinch & Nidhi on their wedding! RSVP confirmed."
   );
   const sellerMessage = encodeURIComponent(
-    "Hi! I loved Virinch & Nidhi's interactive wedding invitation. I want to create a similar card for my upcoming event. Please share details!"
+    "Hi Shubham Digital Studio! I loved Virinch & Nidhi's interactive wedding invitation. I want to create a similar card for my event. Please share details!"
   );
 
   return (
@@ -65,6 +65,9 @@ export default function LanternRSVP() {
           <h3 className="font-cinzel text-2xl sm:text-3xl text-[#FFF4E3] font-semibold tracking-wide">
             Arvind Charan
           </h3>
+          <p className="font-sans text-sm sm:text-[0.95rem] text-[#E8DEC8] font-medium tracking-wide mt-1.5 opacity-90">
+            Th. Chopasni Charnan
+          </p>
 
           {/* Address */}
           <p className="font-sans text-sm text-[#D9CDB8]/80 mt-4 max-w-xs leading-relaxed">
@@ -120,12 +123,12 @@ export default function LanternRSVP() {
       {/* ── Promo Footer ── */}
       <footer className="w-full bg-[#FFF4E3] py-8 px-4 flex flex-col items-center text-center border-t border-[#E8DFC8]">
         <p className="font-sans text-xs sm:text-sm text-[#6B5D4F] tracking-wide">
-          Want a digital invitation like this?{" "}
+          Made by Shubham Digital Studio •{" "}
           <a
             href={`https://wa.me/${sellerPhone}?text=${sellerMessage}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#6A1C28] underline underline-offset-4 decoration-[#C9A96E] hover:text-[#4A1521] transition-colors"
+            className="text-[#15803D] hover:text-[#0D5326] font-semibold underline underline-offset-4 decoration-[#22C55E] transition-colors"
           >
             Click here to get yours
           </a>

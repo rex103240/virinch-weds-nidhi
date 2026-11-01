@@ -25,6 +25,9 @@ export default function ParallaxArches() {
   // Layer 3: Text content (moves up slowly)
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
 
+  // Fade out the tutorial indicator as soon as user begins scrolling down
+  const tutorialOpacity = useTransform(scrollYProgress, [0, 0.08], [1, 0]);
+
   return (
     <section 
       ref={containerRef}
@@ -112,6 +115,35 @@ export default function ParallaxArches() {
             <rect x="0" y="800" width="60" height="200" fill="#FFF4E3" stroke="#C9A96E" strokeWidth="2" />
             <rect x="940" y="800" width="60" height="200" fill="#FFF4E3" stroke="#C9A96E" strokeWidth="2" />
           </svg>
+        </motion.div>
+
+        {/* Navigation Preview Tutorial (Subtle cue to scroll down, matches RoyalDoors style) */}
+        <motion.div
+          style={{ opacity: tutorialOpacity }}
+          className="absolute bottom-7 sm:bottom-10 left-1/2 -translate-x-1/2 z-30 pointer-events-auto cursor-pointer select-none"
+          onClick={() => {
+            window.scrollBy({ top: window.innerHeight * 0.85, behavior: "smooth" });
+          }}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2.2, duration: 1, ease: "easeOut" }}
+          >
+            <motion.p
+              animate={{ opacity: [0.4, 1, 0.4], y: [0, 4, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="font-sans uppercase tracking-[0.3em] text-[0.7rem] text-[#6B5D4F] font-medium drop-shadow-sm flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-[#FFF4E3]/40 backdrop-blur-xs border border-[#C9A96E]/20"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+              Swipe Down
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </motion.p>
+          </motion.div>
         </motion.div>
 
       </div>
