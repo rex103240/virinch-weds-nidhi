@@ -137,7 +137,7 @@ export default function BloomingLotus() {
                   With the blessings of Shri Temda Rai &amp; Maa Karni
                 </p>
                 <p className="font-serif italic text-[#D9CDB8] text-sm sm:text-base leading-relaxed opacity-90">
-                  "A new journey begins under the golden skies of The Bikaner"
+                  "Two souls, one destiny - Blessed with timeless joy under the golden skies of the Bikaner"
                 </p>
               </div>
             </motion.div>
