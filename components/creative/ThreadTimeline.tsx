@@ -14,7 +14,7 @@ interface EventItem {
 
 const events: EventItem[] = [
   {
-    title: "Vinayak",
+    title: "Vinayak Sthapana",
     hindi: "विनायक स्थापना",
     date: "Friday, 11 Dec 2026",
     time: "09:15 AM",
@@ -58,10 +58,10 @@ export default function ThreadTimeline() {
 
       {/* Header */}
       <div className="text-center mb-10 sm:mb-14 relative z-10 flex flex-col items-center">
-        <p className="uppercase tracking-[0.4em] text-[0.7rem] text-[#9B8D7F] mb-2 font-sans font-medium">
+        <p className="uppercase tracking-[0.4em] text-[0.7rem] text-[#9B8D7F] mb-4 sm:mb-5 font-sans font-medium">
           Auspicious Celebrations
         </p>
-        <h2 className="font-cinzel uppercase tracking-[0.15em] text-2xl sm:text-4xl text-[#4A1521] font-semibold mt-2">
+        <h2 className="font-cinzel uppercase tracking-[0.15em] text-2xl sm:text-4xl text-[#4A1521] font-semibold">
           Wedding Festivities
         </h2>
         <OrnamentDivider motif="✦" className="py-3" />

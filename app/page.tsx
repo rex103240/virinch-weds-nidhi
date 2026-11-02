@@ -58,8 +58,8 @@ export default function Home() {
         </SmoothScroll>
       )}
 
-      {/* Fixed music toggle */}
-      <MusicToggle visible={isOpen} />
+      {/* Background audio autoplay (no UI button) */}
+      <MusicToggle />
     </>
   );
 }

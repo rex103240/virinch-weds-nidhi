@@ -125,9 +125,6 @@ export default function BloomingLotus() {
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(201,169,110,0.2)_0%,transparent_70%)]" />
               
-              <h2 className="font-cinzel text-[clamp(1.5rem,3vw,2rem)] text-[#D4B87A] mb-3 relative z-10 tracking-widest">
-                Save The Date
-              </h2>
               <p className="font-cinzel text-[clamp(2.2rem,6vw,3.5rem)] text-[#FFF4E3] drop-shadow-[0_2px_15px_rgba(201,169,110,0.4)] mb-4 relative z-10 leading-tight max-w-[95%] md:max-w-2xl text-center">
                 Saturday, 12 Dec 2026
               </p>
