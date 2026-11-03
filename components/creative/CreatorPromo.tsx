@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export default function CreatorPromo() {
-  const sellerPhone = "917976944626";
+  const sellerPhone = "919876543210";
   const sellerMessage = encodeURIComponent(
     "Hi! I loved Virinch & Nidhi's interactive wedding invitation. I want to create a similar card for my upcoming event. Please share details!"
   );

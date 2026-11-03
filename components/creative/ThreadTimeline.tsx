@@ -18,7 +18,7 @@ const events: EventItem[] = [
     hindi: "विनायक स्थापना",
     date: "Friday, 11 Dec 2026",
     time: "09:15 AM",
-    venue: "157 Laxmi Nagar, Paota, Jodhpur",
+    venue: "Residence, Paota, Jodhpur",
   },
   {
     title: "Ghritpan Ceremony",
@@ -39,7 +39,7 @@ const events: EventItem[] = [
     hindi: "बारात प्रस्थान",
     date: "Saturday, 12 Dec 2026",
     time: "12:15 PM",
-    venue: "157 Laxmi Nagar, Paota, Jodhpur",
+    venue: "Residence, Paota, Jodhpur",
   },
   {
     title: "Reception",

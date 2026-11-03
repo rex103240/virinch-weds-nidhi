@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 export default function LanternRSVP() {
-  const primaryPhone = "8003530144";
-  const secondaryPhone = "7300337983";
-  const sellerPhone = "919829354128";
+  const primaryPhone = "9876543210";
+  const secondaryPhone = "9876543211";
+  const sellerPhone = "919876543210";
   const waMessage = encodeURIComponent(
     "Namaste Arvind ji, Heartiest congratulations to Virinch & Nidhi on their wedding! RSVP confirmed."
   );
@@ -71,18 +71,18 @@ export default function LanternRSVP() {
 
           {/* Address */}
           <p className="font-sans text-sm text-[#D9CDB8]/80 mt-4 max-w-xs leading-relaxed">
-            157 Laxmi Nagar, Paota B Road,<br />
+            Residence, Paota B Road,<br />
             Jodhpur, Rajasthan
           </p>
 
           {/* Phone numbers */}
           <div className="flex flex-wrap justify-center items-center gap-4 mt-5 font-sans text-sm text-[#D4B87A]/90">
             <a href={`tel:+91${primaryPhone}`} className="hover:text-[#FFF4E3] transition-colors">
-              +91 {primaryPhone}
+              +91 98765 43210
             </a>
             <span className="text-[#C9A96E]/30">|</span>
             <a href={`tel:+91${secondaryPhone}`} className="hover:text-[#FFF4E3] transition-colors">
-              +91 {secondaryPhone}
+              +91 98765 43211
             </a>
           </div>
 
